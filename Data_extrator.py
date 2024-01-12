@@ -15,7 +15,7 @@ def Quantidade_por_grau_escolaridade(zona):
 
 def Quantidade_por_faixa_etaria(zona):
     qt_faixa_etaria = {}
-    qt = 0 
+    qt = 0  
     for faixa in zona['DS_FAIXA_ETARIA'].unique():
         for row in zona[zona['DS_FAIXA_ETARIA']== faixa ].itertuples():
             qt += row.QT_ELEITORES_PERFIL
